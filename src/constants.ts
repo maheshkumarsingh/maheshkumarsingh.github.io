@@ -1,5 +1,7 @@
 import { Mail, Linkedin, Globe, MapPin, ArrowRight, Award, ShieldCheck, Cpu, Database, Layout, Cloud, Code, Zap, Users } from "lucide-react";
 
+const profileImage = new URL("./assets/profile.jpg", import.meta.url).href;
+
 export const RESUME_DATA = {
   name: "Mahesh Kumar Singh",
   title: "Senior Full Stack .NET Developer",
@@ -12,7 +14,7 @@ export const RESUME_DATA = {
     github: "https://github.com",
     personal: "https://meet-your-match.azurewebsites.net/",
     address: "Pune, Maharashtra, India",
-    image: "/profile.jpg"
+    image: profileImage
   },
   summary: [
     "Senior Full Stack Developer with 4+ years of enterprise experience, currently at The Toro Company building IoT solutions for smart irrigation systems.",
