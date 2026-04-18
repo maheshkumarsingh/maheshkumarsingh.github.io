@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;600;800&family=JetBrains+Mono:wght@400;500&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Outfit", sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+
+  --color-accent: #00FF94; /* Futuristic Neon Green */
+  --color-dark-bg: #050505;
+  --color-card-bg: #0F0F0F;
+}
+
+@layer base {
+  body {
+    @apply bg-dark-bg text-white selection:bg-accent selection:text-black;
+  }
+}
+
+.glass-card {
+  @apply bg-card-bg border border-white/10 backdrop-blur-md;
+}
+
+.text-gradient {
+  @apply bg-clip-text text-transparent bg-gradient-to-r from-white via-white/80 to-accent;
+}
+
+.glow-on-hover:hover {
+  box-shadow: 0 0 20px rgba(0, 255, 148, 0.2);
+}
